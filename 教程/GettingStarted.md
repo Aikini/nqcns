@@ -34,8 +34,8 @@
 
 ## 完善命令
 在你输入命令后，需要用空格进行分割，而分割后输入的这部分内容我们称之为*参数*。用下图作为举例，*edit*和*questname*即为参数，这条命令中，共有2个参数：  
-![完善命令](https://free.wzznft.com/i/2023/10/21/no7p82.png)
-</div>
+![完善命令](https://s2.loli.net/2023/10/21/XtOxNmwrVYuZcDe.png)
+
 如果你在最后一个参数后再按一下空格键，我们的智能命令系统会自动为你显示“后续”可用（可补全）的参数。如果你输入的命令无法执行，不妨试试在后面加一个空格，看看后面是否还有需要填写的参数，然后，再看一遍**完善命令**这部分内容！  
 
 !> 如果无法自动填充参数，后面没有显示后续可用参数，只需**按下回车**执行现有的命令就好！之后你就会看到一个**帮助菜单**。这个菜单会为你提供帮助，它会告诉你可用参数及其用途。
@@ -45,8 +45,7 @@
 想要学会一件事，我觉得最好最简单的方式就是：边学边做！所以，别在这无聊的文档上浪费时间了，我们来创建我们的第一个任务吧：  
 ```/qa create TheVirus```  
 执行该命令后会出现下面一则消息：  
-<div align=center><img src="/pic/getting-started/quest-successfully-created.png" alt="任务TheVirus已成功创建！"> 
-</div>
+![任务TheVirus已成功创建！](https://s2.loli.net/2023/10/21/Ilh4Z5zM2KcjADo.png)  
 
 ## 1.任务描述&显示名称
 现在，我们成功创建了一个名叫TheVirus的任务，TheVirus即是这个任务的**任务名称**，任务名称中不能有任何空格，它只是作为一个任务的**识别符**。不过，我们可用给它设定一个**显示名称**，显示名称顾名思义，就是玩家实际在游戏中能够看到的名称，这个名称中可用使用空格。在这里，我们为我们的任务设定一个显示名称*A Deadly Virus*（一个死亡病毒）。  
@@ -54,18 +53,18 @@
 接下来，我们想要为该任务添加一个描述，这个描述会在很多地方显示出来，例如，玩家正打算尝试预览任务或是接受任务时显示。在这里，我们为我们的任务添加一个描述：*一个死亡病毒感染了临冬城的居民。你必须物理净化掉这些被感染的村民，从而阻止病毒的继续传播。*  
 ```/qa edit TheVirus description set A deadly virus has infected the people of Winterfell. You have to murder the infected villagers to prevent the virus from spreading further.```  
 至此，你的玩家接取任务后就会看到这样一个漂亮的描述和显示名称：  
-<div align=center><img src="/pic/getting-started/after-accepting-with-description.png" alt="任务描述：一个死亡病毒感染了临冬城的居民。你必须物理净化掉这些被感染的村民，从而阻止病毒的继续传播。  
-[任务已接受]  
-一个死亡病毒"> 
-</div>  
+![任务描述：一个死亡病毒感染了临冬城的居民。你必须物理净化掉这些被感染的村民，从而阻止病毒的继续传播。  
+【任务已接受】  
+一个死亡病毒](https://s2.loli.net/2023/10/21/XUrqEFvlMKcf3gQ.png)  
+
 
 ## 2.前置
 在没有设定任何前置的情况下，每个玩家都可以接受你的任务。不过，这个任务相当棘手！所以我们得要求玩家至少获得10点任务点数，才能接受这个任务：  
 ```/qa edit TheVirus requirements add QuestPoints moreOrEqualThan 10```  
 任务点数可以通过完成任务获得，或者手动发放。  
 如果玩家目前不满足前置条件，接取任务时会看到这个提示。  
-<div align=center><img src="/pic/getting-started/quest-successfully-created.png" alt="您没有满足该任务的前置要求! 缺少要求:你至少需要10点任务点数。"> 
-</div>  
+![您没有满足该任务的前置要求! 缺少要求:你至少需要10点任务点数。](https://s2.loli.net/2023/10/21/WAg4f6e8KGv1V5o.png)  
+
 
 为了进一步测试我们的任务，先给自己发放10点任务点数吧：  
 ```/qa questpoints putyourminecraftnamehere add 10```  
@@ -86,9 +85,9 @@
 再设定目标的显示名称：*Stinky Street*  
 ```/qa edit TheVirus objectives edit 1 displayName set Stinky Street```  
 然后就可以用命令```/q take TheVirus```接取我们的任务了！  
-<div align=center><img src="/pic/getting-started/after-accepting-with-first-objective.png" alt="目标：1.Stinky Street：描述：被感染的僵尸在街上拉屎了！你需要通过破坏64个泥土才能清理干净！  破坏方块：泥土  进度：0/64  任务描述：一个死亡病毒感染了临冬城的居民。你必须物理净化掉这些被感染的村民，从而阻止病毒的继续传播。  
-[任务已接受]  
-一个死亡病毒"> "></div>  
+![目标：1.Stinky Street：描述：被感染的僵尸在街上拉屎了！你需要通过破坏64个泥土才能清理干净！  破坏方块：泥土  进度：0/64  任务描述：一个死亡病毒感染了临冬城的居民。你必须物理净化掉这些被感染的村民，从而阻止病毒的继续传播。  
+【任务已接受】  
+一个死亡病毒](https://s2.loli.net/2023/10/21/V7UYmMD6piFcRNd.png)  
 
 这些都很简单对吧？  
 
@@ -105,9 +104,9 @@
 ### 目标依赖
 
 现在，在接受这个任务后，你将看到以下内容：  
-<div align=center><img src="/pic/getting-started/after-accepting-with-second-objective.png" alt="目标：1.臭街：描述：被感染的僵尸在街上拉屎了！你需要通过破坏64个泥土才能清理干净！ 破坏方块：泥土 进度：0/64  2.僵尸突围！：描述：如你所见，你的面前都是被感染的村民！为了阻止病毒的传播，干掉他们！ 击杀生物：僵尸村民 进程0/15  任务描述：一个死亡病毒感染了临冬城的居民。你必须物理净化掉这些被感染的村民，从而阻止病毒的继续传播。  
-[任务已接受]  
-一个死亡病毒"> "></div>  
+![目标：1.臭街：描述：被感染的僵尸在街上拉屎了！你需要通过破坏64个泥土才能清理干净！ 破坏方块：泥土 进度：0/64  2.僵尸突围！：描述：如你所见，你的面前都是被感染的村民！为了阻止病毒的传播，干掉他们！ 击杀生物：僵尸村民 进程0/15  任务描述：一个死亡病毒感染了临冬城的居民。你必须物理净化掉这些被感染的村民，从而阻止病毒的继续传播。  
+【任务已接受】  
+一个死亡病毒](https://s2.loli.net/2023/10/21/t5hjSme8sKEvWHw.png)  
 
 
 如你所见，当前这个任务的两个目标都是可见的。可以按照任意顺序完成任务目标。  
@@ -118,10 +117,10 @@
 
 +  **难一点的方法**：```/qa edit TheVirus objectives edit 2 conditions unlock add CompletedObjective 1```。设置解锁目标2的**条件**为完成目标1。如果有多个目标，你就需要挨个给它们设置。不过，这种方法有很高的灵活性。  
 完成！现在要是你刚接受这个任务，你就会看见第二目标是隐藏着的。  
+![目标：1.臭街：描述：被感染的僵尸在街上拉屎了！你需要通过破坏64个泥土才能清理干净！ 破坏方块：泥土 进度：0/64  2.【隐藏】  任务描述：一个死亡病毒感染了临冬城的居民。你必须物理净化掉这些被感染的村民，从而阻止病毒的继续传播。  
+【任务已接受】  
+一个死亡病毒](https://s2.loli.net/2023/10/21/UGn7Ihurlpfv5dK.png)  
 
-<div align=center><img src="/pic/getting-started/after-accepting-with-second-objective-and-dependency.png" alt="目标：1.臭街：描述：被感染的僵尸在街上拉屎了！你需要通过破坏64个泥土才能清理干净！ 破坏方块：泥土 进度：0/64  2.[隐藏]  任务描述：一个死亡病毒感染了临冬城的居民。你必须物理净化掉这些被感染的村民，从而阻止病毒的继续传播。  
-[任务已接受]  
-一个死亡病毒"> "></div>  
 
 第二目标会在你完成第一目标后解锁。😀
 
@@ -136,7 +135,7 @@
 现在，我们把这个事件添加进我们任务的触发器里：  
 ```/qa edit TheVirus triggers add Spawn15ZombieVillagers BEGIN --applyon O2 --world_name ALL```  
 一旦我们开始（BEGIN）在所有世界（不限定世界）里进行第二目标（O2，O是Objective的缩写）时，就会运行“*Spawn15ZombieVillagers*”事件。请随意测试 - 会起效的。👍  
-<div align=center><img src="/pic/getting-started/trigger-after-completing-first-objective.png" alt="右下角是完成任务目标的提示"></div>  
+![右下角是完成任务目标的提示](https://s2.loli.net/2023/10/21/STdErXGz9lsktnC.png)  
 
 ## 5.奖励
 要是你的玩家完成这么艰难的任务后你都不给他一点奖励，那他就既浪费了时间又没有收获，他一定会恨你的。所以，我们来加一点奖励吧：  
@@ -153,8 +152,11 @@
 2.```/qa edit TheVirus rewards edit 2 displayName set +2 handcrafted Wooden Swords```  
 3.```/qa edit TheVirus rewards edit 3 displayName set +300 Coins```  
 完成！这下玩家在完成任务后，就会看见任务的奖励：  
-<div align=center><img src="/pic/getting-started/quest-completed-rewards.png" alt="[任务完成]一个死亡病毒  
-奖励：- +2任务点数 - +2handcrafted Wooden Swords - +300硬币"></div>   
+<img src="/pic/getting-started/quest-completed-rewards.png" alt="[任务完成]一个死亡病毒  
+奖励：- +2任务点数 - +2handcrafted Wooden Swords - +300硬币">
+![【任务完成】一个死亡病毒  
+奖励：- +2任务点数 - +2handcrafted Wooden Swords - +300硬币](https://s2.loli.net/2023/10/21/WyH8bvrKVUi3TN5.png)  
+
 
 
 ## 6.更多任务设定
@@ -195,7 +197,8 @@
 （待实现，但我仍要写这部分内容。这个功能类似于前文任务>目标依赖中所说的预置进程完成顺序，不过这项功能是应用于类别>任务。非常地有用，可以极大地简化你的工作，提升你的工作速度。）
 
 ## 子目标
-<div align=center><img src="/pic/getting-started/sub-objectives.png" alt="目标：1.草坪的呻吟：破坏方块：草方块 进度：0/3 2.提升土壤质量：2.1.减少泥土会好一点：破坏方块：泥土 进度：0/5 2.2.跳跃：在泥土上蹦迪 进度：0/3 3.与Alessio对话 向Alessio反馈 进度：0/1 任务描述：给Bobby的一些清理任务 [任务已接受]我们的草坪"></div>   
+
+![目标：1.草坪的呻吟：破坏方块：草方块 进度：0/3 2.提升土壤质量：2.1.减少泥土会好一点：破坏方块：泥土 进度：0/5 2.2.跳跃：在泥土上蹦迪 进度：0/3 3.与Alessio对话 向Alessio反馈 进度：0/1 任务描述：给Bobby的一些清理任务 【任务已接受】我们的草坪](https://s2.loli.net/2023/10/21/vgq6pBi2PFroNCO.png)  
 
 NotQuests支持子目标，每个目标都可以有无数个子目标。而每个子目标也可以拥有无数个子子目标……以此类推！  
 要创建子目标的话，你必须要先创建一个“Objective”目标作为它的父目标。在上面那个截图中，我们可以看到，子目标2.1和2.2归属于“Objective”目标2。  

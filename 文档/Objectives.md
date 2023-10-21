@@ -246,10 +246,10 @@
 > 然后，一旦插件检测投票插件奖励部分的触发器命令被从控制台运行了（即玩家投票后），该玩家的触发器命令目标就会达成。  
 >> 如果你想用上像“Interactions”这样的插件制作出特别的任务，这项功能非常有用，如果你想制作一个更细节、能与NPC开展脚本化对话的话可以用用那个插件。不过请注意：那个插件的上手门槛很高。同时，请注意：较新版本的NotQuests插件已经拥有了完整的对话系统。  
 > #### 示例：如何给任务名称为“1”的示例任务添加触发器命令  
-> <div align=center><img src="/pic/objectives/o1.png"> </div>
+> ![o1.png](https://s2.loli.net/2023/10/21/Le2UXAQqgbHKcFW.png)  
 > 该示例的对应触发器命令应该是```/qa triggerObjective playervoted NoeX``` - 此处NeoX是我的游戏ID。  
 > 在我们的投票示例中，如果你将该命令在你的投票插件中设定为投票奖励，玩家一旦进行投票，目标就会达成。  
-> <div align=center><img src="/pic/objectives/o2.png"> </div>  
+> ![o2.png](https://s2.loli.net/2023/10/21/bFdlPosrXiGWDje.png)  
 > **命令参数**：  
 > + **```<触发器名称>```** - 用于指定触发器的名称。这里触发器名称需要应用到触发器命令中（```/qa triggerObjective <触发器名称>```）。  
 > + **```<数量>```** - 用于指定完成目标所需的触发器/命令被触发/运行的次数。  

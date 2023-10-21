@@ -1,5 +1,5 @@
 # 👩‍❤️‍👨用标签制作好感度系统<!-- {docsify-ignore-all} -->
-<div align=center><img src="/pic/reputation-system/featuredImage.png" alt="只是一张图片"></div>   
+![featuredImage.png](https://s2.loli.net/2023/10/21/4CnDA1dNwO9pJeo.png) 
 本篇教程将教会你如何使用标签系统制作一个好感度系统 - 用权力的游戏作例子😊  
 让我们来创建我们的好感度系统吧  
 # 构思
@@ -13,7 +13,7 @@ NotQuests可以保存每个玩家的标签系统数据，就是这样，听起�
 ?> 由于下面标签类型需要输入英文，所以这里给出几个标签类型的英文：  整数（Integer）、单精度浮点数（Float）、双精度浮点数（Double）、字符串（String）和布尔值（Boolean）。
 
 # 创建我们的第一个标签
-<div align=center><img src="/pic/reputation-system/npcs.png" alt="只是一张图片"></div>   
+![npcs.png](https://s2.loli.net/2023/10/21/3wYLWA1X7ygGbOT.png)  
 
 我们这有几个现成的NPC：Jon Snow（ID=0）、Arya Stark（ID=1）和Cersei Lannister（ID=2），Jon Snow和Arya Stark都归属于家族Stark。Cerse Lannister归属于家族Lannister。  
 首先，我们来创建一个叫做JonSnowReputation。这个标签将会记录Jon Snow这位NPC对玩家的好感度。用于记录好感度应该使用整数，这个标签应该属于整数（Integer）标签：  
@@ -23,7 +23,7 @@ NotQuests可以保存每个玩家的标签系统数据，就是这样，听起�
 ```/qa tags create Integer CerseiLannisterReputation```  
 ```/qa tags create Integer HouseStarkReputation```  
 ```/qa tags create Integer HouseLannisterReputation```  
-<div align=center><img src="/pic/reputation-system/tagscreated.png" alt="整数标签JonSnowReputation已成功创建  整数标签AryaStarkReputation已成功创建  整数标签CerseiLannisterReputation已成功创建  整数标签HouseStarkReputation已成功创建  整数标签HouseLannisterReputation已成功创建"></div>   
+![整数标签JonSnowReputation已成功创建  整数标签AryaStarkReputation已成功创建  整数标签CerseiLannisterReputation已成功创建  整数标签HouseStarkReputation已成功创建  整数标签HouseLannisterReputation已成功创建](https://s2.loli.net/2023/10/21/12Hg95MkGrAD8hV.png)  
 
 # 创建事件用于修改好感度标签
 好了，那我们来创建一些事件，先创建提升10点家族好感度的事件，再创建降低10点好感度的事件（更多详情请看下方命令）：  

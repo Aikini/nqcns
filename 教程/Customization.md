@@ -13,13 +13,11 @@ NotQuests几乎所有地方都支持颜色代码 - 不过可能和你所熟知�
 与此相对的，我们现如今使用的是MiniMessages，相比之前的颜色代码，它能做一些更高级的东西，而且更简单一些。比如RGB颜色、渐变、甚至还能做到点击命令和悬停消息！你可以在[这里](https://docs.advntr.dev/minimessage/)查看MiniMessages文档。  
 现在，我们来给我们的任务添加一个带颜色的显示名称：  
 ```/qa edit TheVirus displayName set <red>A <bold>Deadly</bold> <#eb34a1>Virus```  
-<div align=center><img src="/pic/Customization/displayname-1.png" alt="任务TheVirus已成功创建！"> 
-</div>  
+![点击预览任务](https://s2.loli.net/2023/10/21/Qc6hnqSUzIwraMH.png)  
 或者，甚至还可以这样：  
 
 ```/qa edit TheVirus displayName set <rainbow>A <bold>Deadly</bold></rainbow> <gradient:#eb34a1:#ffffff>Virus</gradient>```  
-<div align=center><img src="/pic/Customization/displayname-2.png" alt="任务TheVirus已成功创建！"> 
-</div>   
+![点击预览任务](https://s2.loli.net/2023/10/21/3K6NztOS2ojhPLi.png)  
 超级酷，对吧？你甚至可以在很多命令上用自动补全功能补全MiniMessage颜色标签。同时，NotQuests还内置了一些颜色，让你能使用它们来实现一些统一的外观。例如```<highlight>```、```<highlight2>```或```<main>```。这些都可以在config里自定义，以调整NotQuests整体的颜色主题。
 
 **举例**：在任务的第一目标描述中添加可点击的链接：  
